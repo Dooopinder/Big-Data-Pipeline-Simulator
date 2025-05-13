@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {"id": "read", "type": "source"},
+    {"id": "map1", "type": "transformation"},
+    {"id": "reduce1", "type": "shuffle"},
+    {"id": "output", "type": "sink"}
+  ],
+  "edges": [
+    ["read", "map1"],
+    ["map1", "reduce1"],
+    ["reduce1", "output"]
+  ]
+}
